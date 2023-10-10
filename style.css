@@ -5,10 +5,12 @@ body{
 }
 
 header{
+    margin-top: 6px;
+    height: 4rem;
     display: flex;
     justify-content: space-between;
     font-family:'Poppins';
-    
+    margin-bottom: 15px;
 }
 
 .logo{
@@ -36,7 +38,38 @@ header{
     color: black !important;
     text-decoration: none;      
     padding:5px 15px;
+    position: relative;
+  text-decoration: none;
+  color: #333; /* Change the color to your desired text color */
+  transition: color 0.3s, background-image 0.3s; /* Transition for smooth color change */
+  background-image: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49); /* Apply the background gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
     
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; /* Adjust the height of the underline as needed */
+    bottom: .75rem;
+    left: 0;
+    background-image: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49); /* Adjust the gradient colors as needed */
+    transform: scaleX(0); /* Initially, the underline is hidden */
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out; /* Transition for the underline animation */
+  }
+  
+.nav-link:hover {
+color: #007bff;
+/* Change the color to the hover text color */
+}
+
+.nav-link:hover::after {
+transform: scaleX(1); /* Show the underline on hover */
+transform-origin: bottom left;
 }
 .nav1{
     display: flex;
@@ -58,6 +91,7 @@ header{
 .main-sec{
     display: flex;
     justify-content: space-between;
+    
 }
 
 .sec-h1{
@@ -117,7 +151,7 @@ header{
     flex-shrink: 0;
 }    
 .sec2{
-   
+   background-color: #0000000A;
    text-align:center;
    font-family: IBM Plex Sans;
    color:rgba(0, 0, 0, 0.64);
@@ -126,7 +160,7 @@ header{
    justify-content: center;
    align-items:center;
    display: flex;
-   gap:68px;
+   
   
 }
 
@@ -138,8 +172,9 @@ header{
    
     display: flex;
     justify-content: space-between;
-    margin: 10rem 0rem;
+    margin: 10rem;
     gap:3rem;
+    margin-left: 157px;
     
 }
 .sec-p{
@@ -161,17 +196,17 @@ header{
 
 .sec3-img1{
     position: absolute;
-    top: 1395px;
+    top: 1067px;
     right: 413px;
 }
 .sec3-img2{
     position: absolute;
-    top: 1309px;
+    top: 980px;
     right: 212px;
 }
 .sec3-img3{
     position: absolute;
-    top: 1551px;
+    top: 1224px;
     right: 241px;
 }
 .sec3-font{
@@ -247,6 +282,8 @@ header{
 .section4{
     text-align: center;
     margin-top: 20rem;
+    margin-left: 128px;
+    margin-right: 145px;
 }
 .sec4-p{
     overflow: hidden;
@@ -264,8 +301,10 @@ header{
 }  
 
 .section5{
+    margin-top: 5rem;
     text-align: center;
-    padding: 0px 95px;
+    padding: 0px 50px;
+    
     
 }
 .sec4-card{
@@ -314,17 +353,18 @@ header{
     position: relative;
     bottom: 6px;
     right: 38px;
+    height: 43rem;
 }
 .sec5-img1{
     position: absolute;
     top: 174rem;
-    left: 79rem;
+    left: 75rem;
 
 }
 .sec5-img2{
-    position: absolute;
-    top: 174rem;
-    left: 57rem;
+        position: absolute;
+    top: 168rem;
+    left: 55rem;
 
 }
 .card-pos{
@@ -354,6 +394,8 @@ header{
 }
 .sec6-div{
     margin-top: 55px;
+    text-align: center;
+     margin-bottom: 19PX;
 }
 .sec6-link1{
     
@@ -383,6 +425,11 @@ header{
     font-size: 0.875rem;
     color: black;
 }
+.sec6-link:hover{
+    background-color:  #dad9d9;
+    border-radius: 5px;
+    height: 4px;
+}
 
 .sec6-div1{
     display: flex;
@@ -402,12 +449,13 @@ header{
 .sec6-card1{
     border-radius: 20px;
     background-color: #F4F4F4;
-    padding: 26px 21px;
-    height: 120px;
-    width: 213px;
+    padding: 10px 10px;
+    width: 141px;
+    height: 136px;;
 }
 .sec6-card-img{
     height: 24px;
+
 }
 .sec6-card1:hover {
     background: linear-gradient(45deg, 
@@ -442,6 +490,7 @@ header{
 }
 
 .sec6-p1{
+    margin-top: 2rem;
     color: #000;
     font-family: IBM Plex Sans;
     font-size: 1rem;
@@ -453,7 +502,7 @@ header{
 .sec6-crd{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 0.875rem;
+    font-size: 12px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.5rem; /* 171.429% */
@@ -462,7 +511,7 @@ header{
 .sec6-crd1{
     color: #000;
     font-family: IBM Plex Sans;
-    font-size: 0.875rem;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem; /* 171.429% */
@@ -509,6 +558,7 @@ header{
     /* display: flex; */
     /* margin-left: 27rem; */
     font-family: IBM Plex Sans;
+    
 }
 .services2{
     width: 28rem;
@@ -560,7 +610,9 @@ line-height: 1.5rem; /* 150% */
 
 
 .test{
-    text-align: center;
+    
+    align-items: center;
+    /* text-align: center; */
     font-family: Montserrat;
 }
 .test1{
@@ -578,13 +630,68 @@ line-height: 1.5rem; /* 150% */
 }
 .img_one{
     position: absolute;
-    top: 339rem;
+    top: 351rem;
     right: 44rem;
     width: 16rem;
    
 }
+.testimg{
+    width: 5rem;
+}
+
+
+.testimonial-container {
+    position: relative;
+}
+
+.testimonial {
+    display: none;
+    opacity: 0;
+}
+
+.testimonial.active {
+    display: block;
+    opacity: 1;
+    animation: fadeText 5s linear infinite;
+}
+
+.carousel-dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #333;
+}
+
+@keyframes fadeText {
+    0% {
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+    10%, 90% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(5px);
+    }
+}
+
 
 .test-h2{
+    
     color: #000;
     font-family: IBM Plex Sans;
     font-size: 1.5rem;
@@ -699,7 +806,7 @@ line-height: 1.5rem; /* 150% */
 }
 
 .article_card__thumb {
-    height: 245px;
+    height: 250px;
     overflow: hidden;
     background-color: #000;
     background: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49); /* Gradient added here */
@@ -731,7 +838,7 @@ line-height: 1.5rem; /* 150% */
 
 .article_card__body {
     position: relative;
-    height: 142px;
+    height: 150px;
     padding: 20px;
     -webkit-transition: height 0.5s;
     transition: height 0.5s;
@@ -747,7 +854,7 @@ line-height: 1.5rem; /* 150% */
     text-align: left;
     color: rgba(18, 18, 18, 0.87);
     font-family: Poppins;
-    font-size: 1.5rem;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 2rem; /* 133.333% */
@@ -757,7 +864,7 @@ line-height: 1.5rem; /* 150% */
     position: absolute;
     left: 20px;
     right: 20px;
-    bottom: 56px;
+    bottom: 25px;
 
     opacity: 0;
     -webkit-transform: translateY(45px);
@@ -775,7 +882,8 @@ font-family: IBM Plex Sans;
 font-size:14px;
 font-style: normal;
 font-weight: 400;
-line-height: 1.5rem; /* 133.333% */
+line-height: 1.5rem;
+
 }
 
 .article_card:hover .article_card__description {
@@ -815,9 +923,9 @@ line-height: 1.5rem; /* 133.333% */
     gap: 2rem;
 }
 footer{
-    position:static;
+    /* position:static; */
     background-color:#F4F4F4;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
 }
 .footer{
     display: flex;
@@ -903,7 +1011,7 @@ footer{
     border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 47.375rem;
+    width: 46rem;
     height: 3.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
@@ -917,7 +1025,9 @@ footer{
 }
 .sec5-p1:hover{
     background-color: #2b157c;
+    width: 46rem;
     color: white;
+    height: 4rem;
 }
 
 
@@ -933,13 +1043,15 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 .sec5-p2:hover{
     background-color: #2b157c;
+    width: 46rem;
     color: white;
+    height: 4rem;
 }
 
 .sec5-p3{
@@ -954,7 +1066,7 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
     
@@ -962,6 +1074,8 @@ footer{
 .sec5-p3:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-p4{
     border-radius: 20px;
@@ -975,7 +1089,7 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -983,6 +1097,8 @@ footer{
 .sec5-p4:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-p5{
     border-radius: 20px;
@@ -996,7 +1112,7 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
     
@@ -1004,12 +1120,15 @@ footer{
 .sec5-p5:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
 }
-.sec5-p6{
+
+.sec5-p7{
     border-radius: 20px;
     background: #F4F4F4;
     display: flex;
-    width: 36.4375rem;
+    width: 38.375rem;
     height: 3.5rem;
     padding: 0.5625rem 2rem;
     flex-direction: column;
@@ -1017,14 +1136,89 @@ footer{
     align-items: flex-start;
     gap: 0.625rem;
     flex-shrink: 0;
-    margin-top: 16px;
+    /* margin-top: 16px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    /* width: 583px; */
+    /* height: 72px; */
+    /* top: 430px; */
+
+   
+}
+.sec5-p7:hover{
+    background-color: #2b157c;
+    color: white;
+    width: 46rem;
+    height: 4rem;
+}
+.sec5-p8{
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    width: 40.25rem;
+    height: 3.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    /* margin-top: 16px; */
     cursor: pointer;
     transition: background-color 0.3s ease;
    
 }
-.sec5-p6:hover{
+.sec5-p8:hover{
     background-color: #2b157c;
     color: white;
+    width: 46rem;
+    height: 4rem;
+}
+.sec5-p9{
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    width: 43rem;
+    height: 3.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    /* margin-top: 16px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+.sec5-p9:hover{
+    background-color: #2b157c;
+    color: white;
+    width: 46rem;
+    height: 4rem;
+}
+.sec5-p10{
+    border-radius: 20px;
+    background: #F4F4F4;
+    display: flex;
+    width: 46rem;
+    height: 3.5rem;
+    padding: 0.5625rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.625rem;
+    flex-shrink: 0;
+    /* margin-top: 16px; */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+   
+}
+.sec5-p10:hover{
+    background-color: #2b157c;
+    color: white;
+    width: 46rem;
+    height: 4rem;
 }
 .sec5-font{
     color: rgba(0, 0, 0, 0.64);
@@ -1057,9 +1251,18 @@ footer{
     font-weight: 400;
     line-height: 4rem; /* 152.381% */
 }
+.test-f{
+    color: rgba(0, 0, 0, 0.87);
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 4rem; /* 152.381% */
+}
 .test-flex{
     display: flex;
-  justify-content: left;
+  justify-content:center;
 }
 
 .about-1{
@@ -1498,3 +1701,123 @@ input{
 .d{
     width: 27.5rem;
 }
+.mar{
+    padding-top: 2rem;
+    margin-bottom: 0rem;
+}
+.d-flex{
+    display: flex !important;
+    justify-content: center;
+    gap: 2rem;
+    padding: 8rem;
+}
+
+
+/* services.html */
+
+.services-sec1-img{
+    width: 100%;
+}
+.services-sec2{
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+    gap: 5rem;
+}
+.services-card1{
+    position: relative;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    padding: 1.5rem;
+    width: 36rem;
+    height: 16rem;
+    z-index: 1;
+}
+.service-div1{
+    margin-top: 5rem;
+}
+.services-card2{
+    position: relative;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    padding: 1rem 2rem;
+    z-index: 1;
+}
+.s1{
+    margin-top: 7rem;
+}
+.services-img1{
+    margin-top: 10rem;
+}
+.services-img2{
+    position: absolute;
+    top: 73rem;
+    right: 33rem;
+}
+.services-sec1-img3{
+    position: absolute;
+    top: 47rem;
+    right: 65rem;
+}
+
+.services-img-last{
+    margin-top: 8rem;
+}
+.services-sec1-img4{
+    margin-top: 7rem;
+}
+.services-sec1-img5{
+    position: absolute;
+    top: 118rem;
+    right: 39rem;
+}
+.s-font{
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+}
+.s-font1{
+    margin-top: 1.5rem;
+    color: #000;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.slider-container {
+    width: full; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the slider */
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    animation: slideImages 15s linear infinite;
+}
+
+.slider img {
+    width: full; /* Adjust the width as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between images */
+}
+
+@keyframes slideImages {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1200px); /* Adjust the total width of all images */
+    }
+}
+
+/* index.html  */
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (orientation: portrait) {
+   
+}
+
+
