@@ -180,6 +180,7 @@ transform-origin: bottom left;
     font-size: 46px;
     font-style: normal;
     font-weight: 400;
+    font:bold;
     line-height: 54.34px;
 }
 .sec1-img{
@@ -211,7 +212,7 @@ transform-origin: bottom left;
     justify-content: space-between;
     margin: 10rem;
     gap:3rem;
-    margin-left: 157px;
+    margin-left: 135px;
     
 }
 .sec-p{
@@ -341,7 +342,7 @@ transform-origin: bottom left;
 }  
 
 .section5{
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
     text-align: center;
     padding: 0px 50px;
     height: 48rem;
@@ -477,9 +478,9 @@ transform-origin: bottom left;
 .sec6-card{
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     text-align: left;
-    margin-top:40px;
+    margin-top:16px;
     
 }
 .sec6-card1{
@@ -525,7 +526,7 @@ transform-origin: bottom left;
 }
 
 .sec6-p1{
-    margin-top: 2rem;
+    margin-top: .75rem;
     color: #000;
     font-size: 1rem;
     font-style: normal;
@@ -562,7 +563,7 @@ transform-origin: bottom left;
    
 }
 .section-last{
-    margin-top: 7rem;
+    margin-top: 4rem;
     text-align: center;
 }
 .sec-font{
@@ -587,8 +588,7 @@ transform-origin: bottom left;
     /* display: flexbox; */
 }
 .services1{
-    /* display: flex; */
-    /* margin-left: 27rem; */
+    margin-top: 4rem;
     
 }
 .services2{
@@ -617,7 +617,7 @@ transform-origin: bottom left;
 }
 #main1{
     padding: 15px;
-    color: #000
+    color: #000;
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -625,7 +625,7 @@ line-height: 1.5rem; /* 150% */
 }
 #main12{
     padding: 15px;
-    color: #000
+    color: #000;
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -657,7 +657,7 @@ line-height: 1.5rem; /* 150% */
 }
 .img_one{
     position: absolute;
-    top: 351rem;
+    top: 390rem;
     right: 44rem;
     width: 16rem;
    
@@ -903,7 +903,7 @@ line-height: 1.5rem; /* 150% */
     transition-delay: 0s;
     color: rgba(18, 18, 18, 0.87);
 
-    text-align: left
+    text-align: left;
 font-size:14px;
 font-style: normal;
 font-weight: 400;
@@ -1046,7 +1046,7 @@ footer{
 }
 .sec5-p1:hover{
     background-color: #2b157c;
-    width: 46rem;
+    /* width: 46rem; */
     color: white;
     height: 4rem;
 }
@@ -1070,7 +1070,7 @@ footer{
 }
 .sec5-p2:hover{
     background-color: #2b157c;
-    width: 46rem;
+    /* width: 46rem; */
     color: white;
     height: 4rem;
 }
@@ -1095,7 +1095,7 @@ footer{
 .sec5-p3:hover{
     background-color: #2b157c;
     color: white;
-    width: 46rem;
+    /* width: 46rem; */
     height: 4rem;
 }
 .sec5-p4{
@@ -1118,7 +1118,7 @@ footer{
 .sec5-p4:hover{
     background-color: #2b157c;
     color: white;
-    width: 46rem;
+    /* width: 46rem; */
     height: 4rem;
 }
 .sec5-p5{
@@ -1141,7 +1141,7 @@ footer{
 .sec5-p5:hover{
     background-color: #2b157c;
     color: white;
-    width: 46rem;
+    /* width: 46rem; */
     height: 4rem;
 }
 
@@ -1169,7 +1169,7 @@ footer{
 .sec5-p7:hover{
     background-color: #2b157c;
     color: white;
-    width: 46rem;
+    /* width: 46rem; */
     height: 4rem;
 }
 .sec5-p8{
@@ -1192,7 +1192,7 @@ footer{
 .sec5-p8:hover{
     background-color: #2b157c;
     color: white;
-    width: 46rem;
+    /* width: 46rem; */
     height: 4rem;
 }
 .sec5-p9{
@@ -1215,7 +1215,7 @@ footer{
 .sec5-p9:hover{
     background-color: #2b157c;
     color: white;
-    width: 46rem;
+    /* width: 46rem; */
     height: 4rem;
 }
 .sec5-p10{
@@ -1238,7 +1238,7 @@ footer{
 .sec5-p10:hover{
     background-color: #2b157c;
     color: white;
-    width: 46rem;
+    /* width: 46rem; */
     height: 4rem;
 }
 .sec5-font{
@@ -1715,7 +1715,7 @@ input{
 .d-flex{
     display: flex !important;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 8rem;
 }
 
@@ -1728,7 +1728,7 @@ input{
 .services-sec2{
     display: flex;
     justify-content: center;
-    padding: 10rem;
+    padding: 4rem 10rem;
     gap: 5rem;
 }
 .services-card1{
@@ -1738,7 +1738,28 @@ input{
     background-color: #F4F4F4;
     padding: 1.5rem;
     width: 36rem;
-    height: 16rem;
+    height: 24rem;
+    z-index: 1;
+}
+.crd{
+    position: relative;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    padding: 1.5rem;
+    width: 36rem;
+    height: 15rem;
+    z-index: 1;
+
+}
+.crd2{
+    position: relative;
+    text-align: left;
+    border-radius: 20px;
+    background-color: #F4F4F4;
+    padding: 1.5rem;
+    width: 36rem;
+    height: 14rem;
     z-index: 1;
 }
 .service-div1{
