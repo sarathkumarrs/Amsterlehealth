@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
 body{
     padding: 0;
     margin: 0;
     overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header{
@@ -9,7 +11,7 @@ header{
     height: 4rem;
     display: flex;
     justify-content: space-between;
-    font-family:'Poppins';
+    
     margin-bottom: 15px;
 }
 /* index slider */
@@ -135,7 +137,6 @@ transform-origin: bottom left;
 
 .sec-h1{
     color: #161616;
-    font-family: Poppins;
     font-size: 38px;
     font-style: normal;
     font-weight: 400;
@@ -146,7 +147,6 @@ transform-origin: bottom left;
     color: rgba(22, 22, 22, 0.64);
 
     /* body text 16px */
-    font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -157,7 +157,6 @@ transform-origin: bottom left;
     display: flex;
     justify-content: center;
     gap: 10px;
-    font-family:'Poppins';
     padding: 80px;
 }
 
@@ -192,7 +191,6 @@ transform-origin: bottom left;
 .sec2{
    background-color: #0000000A;
    text-align:center;
-   font-family: IBM Plex Sans;
    color:rgba(0, 0, 0, 0.64);
 }
 .section2{
@@ -217,7 +215,6 @@ transform-origin: bottom left;
     
 }
 .sec-p{
-    font-family: IBM Plex Sans;
     align-items: center;
     color:rgba(0, 0, 0, 0.64);
     width: 41%;
@@ -226,7 +223,6 @@ transform-origin: bottom left;
 }
 .sec1-p{
     color: rgba(0, 0, 0, 0.64);
-    font-family: IBM Plex Sans;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
@@ -286,7 +282,6 @@ transform-origin: bottom left;
     text-decoration: none;
     color: var(--text-text-04, #FFF);
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: IBM Plex Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -301,7 +296,6 @@ transform-origin: bottom left;
     text-decoration: none;
     color: #B327C1;
     font-feature-settings: 'clig' off, 'liga' off;
-    font-family: IBM Plex Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -335,7 +329,6 @@ transform-origin: bottom left;
     color: var(--text-text-01, #161616);
     text-align: center;
     text-overflow: ellipsis;
-    font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -380,7 +373,6 @@ transform-origin: bottom left;
   }
 .card-style{
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -388,7 +380,6 @@ transform-origin: bottom left;
 }  
 .card-style1{
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -432,7 +423,6 @@ transform-origin: bottom left;
     text-overflow: ellipsis;
 
     /* Headline small 24px */
-    font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -449,7 +439,6 @@ transform-origin: bottom left;
     background-color:  #dad9d9;
     padding: 10px 40px;
     text-decoration: none;
-    font-family: IBM Plex Sans;
     font-size: 0.875rem;
     font-weight: 2;
     color: black;
@@ -467,7 +456,6 @@ transform-origin: bottom left;
     
     padding: 10px 40px;
     text-decoration: none;
-    font-family: IBM Plex Sans;
     font-size: 0.875rem;
     color: black;
 }
@@ -528,7 +516,6 @@ transform-origin: bottom left;
     color: #000;
 
     /* Headline small 24px */
-    font-family: IBM Plex Sans;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -538,7 +525,6 @@ transform-origin: bottom left;
 .sec6-p1{
     margin-top: 2rem;
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
@@ -547,7 +533,6 @@ transform-origin: bottom left;
 
 .sec6-crd{
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 12px;
     font-style: normal;
     font-weight: 600;
@@ -556,7 +541,6 @@ transform-origin: bottom left;
 
 .sec6-crd1{
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 10px;
     font-style: normal;
     font-weight: 400;
@@ -603,7 +587,6 @@ transform-origin: bottom left;
 .services1{
     /* display: flex; */
     /* margin-left: 27rem; */
-    font-family: IBM Plex Sans;
     
 }
 .services2{
@@ -632,9 +615,7 @@ transform-origin: bottom left;
 }
 #main1{
     padding: 15px;
-    font-family: IBM Plex Sans;
-    color: #000;
-font-family: IBM Plex Sans;
+    color: #000
 font-size: 18px;
 font-style: normal;
 font-weight: 600;
@@ -642,8 +623,7 @@ line-height: 1.5rem; /* 150% */
 }
 #main12{
     padding: 15px;
-    color: #000;
-font-family: IBM Plex Sans;
+    color: #000
 font-size: 14px;
 font-style: normal;
 font-weight: 400;
@@ -651,7 +631,6 @@ line-height: 1.5rem; /* 150% */
 }
 #main2{
     padding: revert;
-    font-family: IBM Plex Sans;
 }
 
 
@@ -739,7 +718,6 @@ line-height: 1.5rem; /* 150% */
 .test-h2{
     
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 400;
@@ -923,8 +901,7 @@ line-height: 1.5rem; /* 150% */
     transition-delay: 0s;
     color: rgba(18, 18, 18, 0.87);
 
-    text-align: left;
-font-family: IBM Plex Sans;
+    text-align: left
 font-size:14px;
 font-style: normal;
 font-weight: 400;
@@ -952,8 +929,7 @@ line-height: 1.5rem;
 
 .icon {
 
-/* body text 16px */
-font-family: IBM Plex Sans;
+/* body text 16px *
 font-size: 1.125rem;
 font-style: normal;
 font-weight: 400;
@@ -997,7 +973,6 @@ footer{
 }
 .ftr-list{
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1005,7 +980,6 @@ footer{
 }
 .ftr-con{
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1013,7 +987,6 @@ footer{
 }
 .ftr-list1{
     color: #121212;
-    font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -1021,7 +994,6 @@ footer{
 }
 .ftr-con1{
     color: #121212;
-    font-family: IBM Plex Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1029,7 +1001,6 @@ footer{
 }
 .ftr-con2{
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
@@ -1270,7 +1241,6 @@ footer{
 }
 .sec5-font{
     color: rgba(0, 0, 0, 0.64);
-    font-family: IBM Plex Sans;
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1343,7 +1313,6 @@ footer{
     text-align: center;
 
     /* Headline small 24px */
-    font-family: IBM Plex Sans;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -1366,7 +1335,6 @@ footer{
     color: rgba(0, 0, 0, 0.60);
 
     /* body text 16px */
-    font-family: IBM Plex Sans;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -1377,7 +1345,6 @@ footer{
     color: rgba(0, 0, 0, 0.60);
 
     /* body text 16px */
-    font-family: IBM Plex Sans;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -1444,7 +1411,6 @@ footer{
 }
 .about-sec2-font1{
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 1rem;
     font-style: normal;
     font-weight: 600;
@@ -1452,7 +1418,6 @@ footer{
 }
 .about-card-flex-font{
     color: #121212;
-    font-family: IBM Plex Sans;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -1490,7 +1455,6 @@ footer{
     color: #000;
 
     /* Headline small 24px */
-    font-family: IBM Plex Sans;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
@@ -1500,7 +1464,6 @@ footer{
     color: #000;
 
     /* body text 16px */
-    font-family: IBM Plex Sans;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 400;
@@ -1527,7 +1490,6 @@ footer{
 }
 .career-h5{
     color: rgba(18, 18, 18, 0.60);
-    font-family: IBM Plex Sans;
     font-size: 0.75rem;
     font-style: normal;
     font-weight: 700;
@@ -1548,7 +1510,6 @@ footer{
     margin-top: 1.5rem;
     color: rgba(0, 0, 0, 0.60);
     text-align: justify;
-    font-family: IBM Plex Sans;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -1557,7 +1518,6 @@ footer{
 .career-p1{
     margin-top: 1.5rem;
     color: #000;
-    font-family: IBM Plex Sans;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -1568,7 +1528,6 @@ footer{
     padding: 0 18px;
     color: rgba(0, 0, 0, 0.60);
     text-align: justify;
-    font-family: IBM Plex Sans;
     font-size: 0.875rem;
     font-style: normal;
     font-weight: 400;
@@ -1593,7 +1552,6 @@ footer{
 }
 .career-label{
     /* productive / label-01 */
-    font-family: IBM Plex Sans;
     font-size: 0.85rem;
     font-style: normal;
     font-weight: 400;
@@ -1662,7 +1620,6 @@ input{
 }
 .career-label1{
     /* productive / label-01 */
-    font-family: IBM Plex Sans;
     font-size: 1rem;
     font-style: normal;
     font-weight: 400;
