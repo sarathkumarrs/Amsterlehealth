@@ -235,17 +235,17 @@ transform-origin: bottom left;
 
 .sec3-img1{
     position: absolute;
-    top: 1067px;
+    top: 1200px;
     right: 413px;
 }
 .sec3-img2{
     position: absolute;
-    top: 980px;
+    top: 1107px;
     right: 212px;
 }
 .sec3-img3{
     position: absolute;
-    top: 1224px;
+    top: 1351px;
     right: 241px;
 }
 .sec3-font{
@@ -266,7 +266,7 @@ transform-origin: bottom left;
     transition: color 0.3s;
 }
 .read1:hover{
-    transition: color 0.3s;
+    ba
 }
 .heading{
     display: flow;
@@ -496,7 +496,7 @@ transform-origin: bottom left;
     background-color: #F4F4F4;
     padding: 10px 10px;
     width: 141px;
-    height: 136px;;
+    height: 158px;
 }
 .sec6-card-img{
     height: 24px;
