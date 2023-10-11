@@ -1,20 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-  $("button").click(function(){
-    $("div").fadeTo("slow",0.45);
-  });
-});
-</script>
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .slideshow-container {
+      position: relative;
+      width: 100%; /* Set the width to the full viewport width */
+      overflow: hidden; /* Hide overflowing content */
+    }
 
+    .mySlides {
+      display: none;
+      transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
+    }
+
+    .mySlides.active {
+      display: block;
+    }
+
+    .hero-wrap {
+      background-size: cover;
+      background-attachment: fixed;
+      height: 100vh; /* Set the height to full viewport height */
+      position: relative;
+      color: #fff; /* Set text color to white (you can adjust this as needed) */
+      opacity: 0; /* Start with 0 opacity */
+      transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
+    }
+
+    .hero-wrap.active {
+      opacity: 1; /* When active, set opacity to 1 */
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%; /* Center content vertically */
+      left: 50%; /* Center content horizontally */
+      transform: translate(-50%, -50%); /* Center content perfectly */
+      text-align: center; /* Center text within the content div */
+    }
+  </style>
+</head>
 <body>
-<div style="background:yellow;width:300px;height:300px">
-<button>Click to Fade</button>
-</div>
+  <div class="slideshow-container">
+    <div class="mySlides faded">
+      <div class="hero-wrap" style="background-image: url('image/auditor-or-internal-revenue-service-staff-2022-11-16-18-05-21-utc.jpg');">
+        <div class="hero-content">
+          <h1>Healthcare management systems for a connected future</h1>
+          <p>Fully Integrated Web-based Applications for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mySlides faded">
+      <div class="hero-wrap" style="background-image: url('image/slider1.png');">
+        <div class="hero-content">
+          <h1>hjdxjweopoekdfef</h1>
+          <p>hfbvjkfldvlk;asdkd;kfjrdfs.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mySlides faded">
+      <div class="hero-wrap" style="background-image: url('image/slider2.png');">
+        <div class="hero-content">
+          <h1>fjdvksl;vjfhls;dvjfl</h1>
+          <p>hfdkjljsfgslesdjglekfsdjkglirel.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mySlides faded">
+      <div class="hero-wrap" style="background-image: url('image/slider3.png');">
+        <div class="hero-content">
+          <h1>fjdvksl;vjfhls;dvjfl</h1>
+          <p>hfdkjljsfgslesdjglekfsdjkglirel.</p>
+        </div>
+      </div>
+    </div>
+    <div class="mySlides faded">
+      <div class="hero-wrap" style="background-image: url('image/slider4.png');">
+        <div class="hero-content">
+          <h1>fjdvksl;vjfhls;dvjfl</h1>
+          <p>hfdkjljsfgslesdjglekfsdjkglirel.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // JavaScript for carousel functionality
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let slides = document.getElementsByClassName("mySlides");
+      let heroWraps = document.getElementsByClassName("hero-wrap");
+
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].classList.remove("active"); // Remove 'active' from all slides
+        heroWraps[i].classList.remove("active"); // Remove 'active' from all hero-wraps
+      }
+
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }
+
+      slides[slideIndex - 1].classList.add("active"); // Add 'active' to the current slide
+      heroWraps[slideIndex - 1].classList.add("active"); // Add 'active' to the current hero-wrap
+      setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+  </script>
 </body>
 </html>
-

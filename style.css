@@ -12,6 +12,45 @@ header{
     font-family:'Poppins';
     margin-bottom: 15px;
 }
+/* index slider */
+.slideshow-container {
+    position: relative;
+    width: 100%; /* Set the width to the full viewport width */
+    overflow: hidden; /* Hide overflowing content */
+  }
+
+  .mySlides {
+    display: none;
+    transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
+  }
+
+  .mySlides.active {
+    display: block;
+  }
+
+  .hero-wrap {
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh; /* Set the height to full viewport height */
+    position: relative;
+    color: #fff; /* Set text color to white (you can adjust this as needed) */
+    opacity: 0; /* Start with 0 opacity */
+    transition: opacity 0.5s ease; /* Add a smooth transition for opacity */
+  }
+
+  .hero-wrap.active {
+    opacity: 1; /* When active, set opacity to 1 */
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%; /* Center content vertically */
+    left: 50%; /* Center content horizontally */
+    transform: translate(-50%, -50%); /* Center content perfectly */
+    text-align: center; /* Center text within the content div */
+  }
+
+  
 
 .logo{
     display: flex;
@@ -304,6 +343,7 @@ transform-origin: bottom left;
     margin-top: 5rem;
     text-align: center;
     padding: 0px 50px;
+    height: 48rem;
     
     
 }
@@ -759,7 +799,7 @@ line-height: 1.5rem; /* 150% */
 }
 
 .card1{
-    margin: 2rem;
+    /* margin: 2rem; */
    
 }
 .article_card {
@@ -920,7 +960,9 @@ line-height: 1.5rem; /* 133.333% */
 .last-card{
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 3rem;
+    height: 31rem;
+    /* padding: 2rem; */
 }
 footer{
     /* position:static; */
