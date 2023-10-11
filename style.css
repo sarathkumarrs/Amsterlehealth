@@ -266,7 +266,8 @@ transform-origin: bottom left;
     transition: color 0.3s;
 }
 .read1:hover{
-    ba
+    color: blue;
+    text-decoration: underline;
 }
 .heading{
     display: flow;
