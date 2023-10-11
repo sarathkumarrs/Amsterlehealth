@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link href="assets/js/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+	
 </head>
 <body style="">
     <header>
@@ -53,142 +56,63 @@
         </div>  
     </header>
    
-    <section class="main-sec section-overlay">
-        <div class="slideshow-container">
-            <div class="mySlides faded">
-              <div class="hero-wrap" style="background-image: url('image/Frame\ 695.svg');">
-                <div class="hero-content">
-                  <h1 class="gradient-text sec-h1">Healthcare management systems for a connected future</h1>
-                  <p class="sec-p1">Fully Integrated Web-based Applications for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries.</p>
-                </div>
-              </div>
-            </div>
-            <div class="mySlides faded">
-              <div class="hero-wrap" style="background-image: url('image/slider1.png');">
-                <div class="hero-content">
-                    <h1 class="gradient-text sec-h1">Healthcare management systems for a connected future</h1>
-                    <p class="sec-p1">Fully Integrated Web-based Applications for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries.</p>
-                </div>
-              </div>
-            </div>
-            <div class="mySlides faded">
-              <div class="hero-wrap" style="background-image: url('image/auditor-or-internal-revenue-service-staff-2022-11-16-18-05-21-utc.jpg');">
-                <div class="hero-content">
-                    <h1 class="gradient-text sec-h1">“LeHealth”</h1>
-                    <p class="sec-p1"> A Specialized State of the Art Healthcare information Management software for transforming healthcare facilities into fully automized Digital environment.</p>
-                </div>
-              </div>
-            </div>
-            <div class="mySlides faded">
-              <div class="hero-wrap" style="background-image: url('image/doctor-visiting-senior-patient-with-family-2022-03-07-17-45-12-utc.jpg');">
-                <div class="hero-content">
-                    <h1 class="gradient-text sec-h1">Healthcare management systems for a connected future</h1>
-                    <p class="sec-p1">Integration With Regional Statutory compliances and international Healthcare standards Like MALAFI, NABIDH, RIAYATI, HL7..etc.</p>
-                </div>
-              </div>
-            </div>
-            <div class="mySlides faded">
-              <div class="hero-wrap" style="background-image: url('image/slider4.png');">
-                <div class="hero-content">
-                    <h1 class="gradient-text sec-h1">Healthcare management systems for a connected future</h1>
-                    <p class="sec-p1">Integration With Regional Statutory compliances and international Healthcare standards Like MALAFI, NABIDH, RIAYATI, HL7..etc.</p>
-                </div>
-              </div>
-            </div>
-        </div>
-        <script>
-            // JavaScript for carousel functionality
-            let slideIndex = 0;
-            showSlides();
+    
+	<!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
-            function showSlides() {
-                let slides = document.getElementsByClassName("mySlides");
-                let heroWraps = document.getElementsByClassName("hero-wrap");
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
 
-                for (let i = 0; i < slides.length; i++) {
-                slides[i].classList.remove("active"); // Remove 'active' from all slides
-                heroWraps[i].classList.remove("active"); // Remove 'active' from all hero-wraps
-                }
+        <div class="carousel-inner" role="listbox">
 
-                slideIndex++;
-                if (slideIndex > slides.length) {
-                slideIndex = 1;
-                }
-
-                slides[slideIndex - 1].classList.add("active"); // Add 'active' to the current slide
-                heroWraps[slideIndex - 1].classList.add("active"); // Add 'active' to the current hero-wrap
-                setTimeout(showSlides, 3000); // Change slide every 3 seconds
-            }
-        </script>
-        <!-- <div class="heading">
-            <div>
-                <h1 class="gradient-text sec-h1">Healthcare management systems for a connected future</h1>
-                <p class="sec-p1">Fully Integrated Web-based Applications for managing all types of Medical Clinics and Medical Centers in UAE & GCC Countries”.</p>
+          <!-- Slide 1 -->
+          <div class="carousel-item active" style="background-image: url('assets/img/slide/slide-1.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to<span> Le Health</span></h2>
+                <p class="animate__animated animate__fadeInUp">The best-known type of hospital is the general hospital, which typically has an emergency department to treat urgent health problems ranging from fire and accident victims to a sudden illness.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
             </div>
-            <div class="bt">
-                <a href="#" class="bt1">Download Brochure</a>   
-                <a href="#" class="bt2">Book a demo</a>
-            </div>
-        </div>
-        <div id="demo" class="carousel slide" data-bs-ride="carousel"> -->
-
-            <!-- Indicators/dots -->
-            <!-- <div class="carousel-indicators">
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
-              <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
-            </div> -->
-            
-            <!-- The slideshow/carousel -->
-            <!-- <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="image/Frame 695.svg" alt="Los Angeles" class="d-block" style="width:100%">
-              </div>
-              <div class="carousel-item">
-                <img src="image/auditor-or-internal-revenue-service-staff-2022-11-16-18-05-21-utc.jpg" alt="Chicago" class="d-block" style="width:100%">
-              </div>
-              <div class="carousel-item">
-                <img src="image/doctor-visiting-senior-patient-with-family-2022-03-07-17-45-12-utc.jpg" alt="New York" class="d-block" style="width:100%">
-              </div>
-            </div> -->
-            
-            <!-- Left and right controls/icons -->
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon"></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-              <span class="carousel-control-next-icon"></span>
-            </button>
           </div>
-           -->
-          <!-- <div class="container-fluid mt-3">
-            <h3>Carousel Example</h3>
-            <p>The following example shows how to create a basic carousel with indicators and controls.</p>
-          </div> -->
-          
-        
-        <!-- <script>
-            let currentSlide = 0;
-            const slides = document.querySelectorAll('.slide-container');
-        
-            function showSlide(n) {
-                slides[currentSlide].style.display = 'none';
-                currentSlide = (n + slides.length) % slides.length;
-                slides[currentSlide].style.display = 'block';
-            }
-        
-            function nextSlide() {
-                showSlide(currentSlide + 1);
-            }
-        
-            function prevSlide() {
-                showSlide(currentSlide - 1);
-            }
-        
-            // Auto-advance the slider every 3 seconds (adjust as needed)
-            setInterval(nextSlide, 3000);
-        </script> -->
-    </section>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide-2.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+               <h2 class="animate__animated animate__fadeInDown">Welcome to<span> Le Health</span></h2>
+                <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item" style="background-image: url('assets/img/slide/slide-3.jpg');">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">Welcome to<span> Le Health</span></h2>
+                <p class="animate__animated animate__fadeInUp">The best-known type of hospital is the general hospital, which typically has an emergency department to treat urgent health problems ranging from fire and accident victims to a sudden illness.</p>
+                <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+	
+	
 
     <section class="sec2">
         <p class="mar">Regional Compliances and International Standards</p>
@@ -677,5 +601,7 @@
         
     </footer> 
     
+<!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
