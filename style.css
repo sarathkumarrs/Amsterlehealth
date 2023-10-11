@@ -50,7 +50,7 @@ header{
     text-align: center; /* Center text within the content div */
   }
 
-  
+
 
 .logo{
     display: flex;
@@ -220,7 +220,7 @@ transform-origin: bottom left;
     font-family: IBM Plex Sans;
     align-items: center;
     color:rgba(0, 0, 0, 0.64);
-    width:37%;
+    width: 41%;
     font-size: 18px;
     line-height: 32px; /* 200% */
 }
