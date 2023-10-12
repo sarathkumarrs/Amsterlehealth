@@ -407,7 +407,7 @@ transform-origin: bottom left;
 .sec5-img{
     position: relative;
     bottom: 6px;
-    right: 38px;
+    /* right: 38px; */
     height: 43rem;
 }
 .sec5-img1{
@@ -495,14 +495,14 @@ transform-origin: bottom left;
     justify-content: center;
     gap: 1rem;
     text-align: left;
-    margin-top:16px;
+    margin-top:3.5rem;
     
 }
 .sec6-card1{
     border-radius: 20px;
     background-color: #F4F4F4;
     padding: 10px 10px;
-    width: 175px;
+    width: 182px;
     height: 158px;
 }
 .sec6-card-img{
@@ -960,7 +960,7 @@ line-height: 1.5rem; /* 133.333% */
     display: flex;
     justify-content: center;
     gap: 3rem;
-    height: 31rem;
+    height: 35rem;
     /* padding: 2rem; */
 }
 footer{
@@ -992,21 +992,21 @@ footer{
     color: #000;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 1000;
     line-height: 24px; /* 150% */
 }
 .ftr-con{
     color: #000;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     line-height: 22px; /* 157.143% */
 }
 .ftr-list1{
     color: #121212;
     font-size: 16px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 1000;
     line-height: 22px; /* 157.143% */
 }
 .ftr-con1{
@@ -1020,7 +1020,7 @@ footer{
     color: #000;
     font-size: 14px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     line-height: normal;
 }
 .ftr-img{
@@ -1285,6 +1285,9 @@ footer{
     font-style: italic;
     font-weight: 400;
     line-height: 4rem; /* 152.381% */
+}
+.test-font2{
+    font-weight: 1000;
 }
 .test-f{
     color: rgba(0, 0, 0, 0.87);
@@ -1789,7 +1792,7 @@ input{
     z-index: 1;
 }
 .s1{
-    margin-top: 7rem;
+    margin-top: 4rem;
 }
 .services-img1{
     height: 25rem;
@@ -1807,10 +1810,10 @@ input{
 }
 
 .services-img-last{
-    margin-top: 8rem;
+    margin-top: 4rem;
 }
 .services-sec1-img4{
-    margin-top: 7rem;
+    margin-top: 4rem;
 }
 .services-sec1-img5{
     position: absolute;
