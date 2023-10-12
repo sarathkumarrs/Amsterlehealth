@@ -672,7 +672,7 @@ line-height: 1.5rem; /* 150% */
 }
 .img_one{
     position: absolute;
-    top: 345rem;
+    top: 350rem;
     right: 44rem;
     width: 16rem;
    
@@ -1781,7 +1781,7 @@ input{
     z-index: 1;
 }
 .service-div1{
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 .services-card2{
     position: relative;
@@ -1792,7 +1792,7 @@ input{
     z-index: 1;
 }
 .s1{
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 .services-img1{
     height: 25rem;
@@ -1809,11 +1809,11 @@ input{
     right: 65rem;
 }
 
-.services-img-last{
-    margin-top: 4rem;
+.services-img-last{    
+    margin-top: 8rem;
 }
 .services-sec1-img4{
-    margin-top: 4rem;
+    margin-top: 6rem;
 }
 .services-sec1-img5{
     position: absolute;
