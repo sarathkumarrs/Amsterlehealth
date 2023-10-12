@@ -172,6 +172,21 @@ transform-origin: bottom left;
 
 
 }
+.services-sec1-image{
+    position: absolute;
+    top: 239rem;
+    right: 65rem;
+}
+.services-sec1-image2{
+    position: absolute;
+    top: 257rem;
+    right: 33rem;
+}
+.services-sec1-image3{
+    position: absolute;
+    top: 310rem;
+    right: 24rem;
+}
 .gradient-text {
     background: linear-gradient(45deg, #4200FF, #820FE7, #9C29BE, #FD7042, #FC9D49);
     -webkit-background-clip: text;
@@ -210,7 +225,7 @@ transform-origin: bottom left;
    
     display: flex;
     justify-content: space-between;
-    margin: 10rem;
+    margin: 5rem;
     gap:3rem;
     margin-left: 135px;
     
@@ -233,18 +248,18 @@ transform-origin: bottom left;
 
 .sec3-img1{
     position: absolute;
-    top: 1300px;
-    right: 413px;
+    top: 1005px;
+    right: 383px;
 }
 .sec3-img2{
     position: absolute;
-    top: 1217px;
-    right: 212px;
+    top: 916px;
+    right: 188px;
 }
 .sec3-img3{
     position: absolute;
-    top: 1460px;
-    right: 241px;
+    top: 1160px;
+    right: 217px;
 }
 .sec3-font{
     font-family: Poppins;
@@ -478,7 +493,7 @@ transform-origin: bottom left;
 .sec6-card{
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     text-align: left;
     margin-top:16px;
     
@@ -487,7 +502,7 @@ transform-origin: bottom left;
     border-radius: 20px;
     background-color: #F4F4F4;
     padding: 10px 10px;
-    width: 141px;
+    width: 175px;
     height: 158px;
 }
 .sec6-card-img{
@@ -536,7 +551,7 @@ transform-origin: bottom left;
 
 .sec6-crd{
     color: #000;
-    font-size: 12px;
+    font-size: 14px;
     font-style: normal;
     font-weight: 600;
     line-height: 1.5rem; /* 171.429% */
@@ -544,7 +559,7 @@ transform-origin: bottom left;
 
 .sec6-crd1{
     color: #000;
-    font-size: 10px;
+    font-size: 12px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.5rem; /* 171.429% */
@@ -657,7 +672,7 @@ line-height: 1.5rem; /* 150% */
 }
 .img_one{
     position: absolute;
-    top: 390rem;
+    top: 356rem;
     right: 44rem;
     width: 16rem;
    
@@ -1709,14 +1724,14 @@ input{
     width: 27.5rem;
 }
 .mar{
-    padding-top: 2rem;
+    padding-top: 1rem;
     margin-bottom: 0rem;
 }
 .d-flex{
     display: flex !important;
     justify-content: center;
     gap: 1rem;
-    padding: 8rem;
+    padding: 3.5rem;
 }
 
 
