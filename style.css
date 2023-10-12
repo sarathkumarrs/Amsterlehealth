@@ -536,7 +536,7 @@ transform-origin: bottom left;
     /* Headline small 24px */
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 1000;
     line-height: 2rem; /* 133.333% */
 }
 
@@ -1792,7 +1792,8 @@ input{
     margin-top: 7rem;
 }
 .services-img1{
-    margin-top: 10rem;
+    height: 25rem;
+    width: 25rem;
 }
 .services-img2{
     position: absolute;
