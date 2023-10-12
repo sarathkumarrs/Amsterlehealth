@@ -103,7 +103,7 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url('image/young-doctor-pushing-button-pane.jpg');height:32rem;">
+          <div class="carousel-item" style="background-image: url('image/young-doctor-pushing-button-pane\ \(1\).jpg');height:32rem;">
             <div class="carousel-container">
               <div class="carousel-content container">
                 <h2 class="animate__animated animate__fadeInDown gradient-text">Healthcare<br> management systems<br> for a connected future</span></h2>
@@ -166,7 +166,7 @@
         <div>
             <div class="sec6-div">
                 
-                <a href="#" class="sec6-link selected" data-target="lehealth-enterprise" onclick="">Enterprise Clinic Management System</a>
+                <a href="#" class="sec6-link selected" data-target="lehealth-enterprise" onclick="">LeHealth Enterprise</a>
                 <a href="#" class="sec6-link" data-target="lehealth-dental">LeHealth Dental</a>
                 <a href="#" class="sec6-link" data-target="lehealth-surgical-center">LeHealth Day Surgical Center</a>
                 <a href="#" class="sec6-link" data-target="lehealth-derma-aesthetics">LeHealth Derma & Aesthetics</a>
@@ -183,10 +183,10 @@
         <div class="d-flex">
             <div>
                 <h4 class="sec6-head">Enterprise Clinic Management System</h4>
-                <!-- <p class="sec6-p1">LeHealth Enterprise is a fully integrated, advanced web-based healthcare<br> operations management system. LeHealth offers an unmatched flexibility to choose<br> and customize the operational requirements of the healthcare facilities based on<br> the current and future requirements.</p> -->
+                <p class="sec6-p1">LeHealth Enterprise is a fully integrated, advanced web-based healthcare<br> operations management system. LeHealth offers an unmatched flexibility to choose<br> and customize the operational requirements of the healthcare facilities based on<br> the current and future requirements.</p>
                 <p class="sec6-p1" id="lehealth-enterprise-desc">LeHealth Enterprise is a fully integrated, advanced web-based healthcare operations management system. LeHealth offers an unmatched flexibility to choose and customize the operational requirements of the healthcare facilities based on the current and future requirements. Latest and advanced user interfaces of the system gives immense support to the users to manage their day-to-day operations easy and effective, hence assuring the best patient experience and satisfaction.
                     LeHealth Enterprise solution offers best in class centralized clinic management system for small, medium and large level single or multichain enterprises.
-                    </p>
+                </p>
                 <p class="sec6-p1" id="lehealth-dental-desc" style="display: none;">Aliquam vel sapien habitasse augue vivamus consequat egestas. At tincidunt facilisis interdum sollicitudin viverra. Orci viverra mi massa massa nulla elementum mi. Mi eu ultrices nisl ullamcorper consectetur gravida. Sagittis nunc lorem commodo quis pellentesque augue in hendrerit aenean.</p>
                 <p class="sec6-p1" id="lehealth-surgical-center-desc" style="display: none;">Pellentesque in porttitor erat ultrices tincidunt. Id viverra tincidunt feugiat mauris arcu mauris orci viverra. Et vitae adipiscing arcu sodales tincidunt placerat. Massa dis aliquam amet a aliquam laoreet nec. Vitae consectetur molestie ut id purus facilisi. Id non tristique tortor lobortis quis phasellus.</p>
                 <p class="sec6-p1" id="lehealth-derma-aesthetics-desc" style="display: none;">Fermentum morbi enim magna varius. A nulla egestas sem nulla senectus. Faucibus dui vulputate tortor enim nibh venenatis ut adipiscing at. Quam imperdiet integer blandit dolor leo sed sit velit. In tristique est metus etiam morbi.
@@ -250,8 +250,13 @@
                 const description = document.getElementById(target + '-desc');
                 description.style.display = 'block';
           
-                // Update the <h4> tag content to match the clicked "a" tag
-                heading.textContent = e.target.textContent;
+                // Update the <h4> tag content if the clicked link is not "LeHealth Enterprise"
+                if (target !== 'lehealth-enterprise') {
+                  heading.textContent = e.target.textContent;
+                } else {
+                  // Set the <h4> tag content to "Enterprise Clinic Management System" for "LeHealth Enterprise"
+                  heading.textContent = 'Enterprise Clinic Management System';
+                }
           
                 // Remove the "selected" class from all links
                 links.forEach(link => {
@@ -277,6 +282,7 @@
             // Add the "sec6-link1" class to the first link on page load
             links[0].classList.add('sec6-link1');
         </script>
+          
     </section>
     <section class="section5">
         <h1 class="gradient-text sec3-font">Why Choose LeHealth Software for your medical facilities</h1>
