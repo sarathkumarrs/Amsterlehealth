@@ -12,6 +12,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
+    background-color: #e4e3e0;
 }
 
 a {
@@ -383,9 +384,70 @@ h6,
   height: calc(100vh - 110px);
   padding: 0;
   overflow: hidden;
-  background: #000;
+  position: relative;
+}
+#services {
+  text-align: center;
+  color: #000;
+  background: #fff;
+    padding: 100px 0;
+    
+}
+#services .bottom{
+  position: relative;
+}
+#services .bottom img{
+  display: block;
+  width: 100%;
+}
+#services .bottom_card {
+  border: none;
+    color: #fff;
+    background: #102057;
+    width: 60%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 45px 35px 31px
+
 }
 
+#services  .owl-carousel .owl-nav button.owl-next, #services .owl-carousel .owl-nav button.owl-prev {
+  margin-right: 12px;
+    border-radius: 50%;
+    border: 1px solid #f85b12;
+    background: #f85b12;
+    width: 50px;
+    height: 50px;
+    font-size: 29px;
+}
+#services .owl-carousel .owl-nav button.owl-next {
+  margin-right: 0;
+}
+#services .owl-nav {
+  position: absolute;
+    right: 63px;
+    top: 38%;
+}
+#services .bottom_card p.sec-p {
+  color: #fff;
+  text-align: left;
+      width: 70%;
+  margin-bottom: 0;
+  font-size: 12px;
+    line-height: 22px;
+  margin-left: 0;
+}
+#services p.sec-p {
+  text-align: center;
+  width: 75%;
+       margin: 30px auto 60px;
+        line-height: 25px;
+}
+#services .sub-heading-text {
+  margin-top: 0;
+}
 #hero .carousel-item {
   width: 100%;
   height: calc(100vh - 110px);
@@ -397,7 +459,7 @@ h6,
 
 #hero .carousel-item::before {
   content: "";
-  background-color: rgba(13, 30, 45, 0.6);
+/*  background-color:   rgba(228,227,224,255);*/
   position: absolute;
   height: 100%;
   width: 100%;
@@ -422,7 +484,9 @@ h6,
 
 #hero .carousel-content {
   text-align: left;
+  max-width: 90%;
 }
+
 
 @media (max-width: 992px) {
 
@@ -437,18 +501,26 @@ h6,
 }
 
 #hero h2 {
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 900;
+  color: #1d2c5f;
+    margin-bottom: 30px;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Poppins';
 }
 
 #hero p {
-  width: 80%;
-  animation-delay: 0.4s;
-  color: #fff;
+  width: 38%;
+ animation-delay: 0.4s;
+    color: #000;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    font-size: 12px;
 }
 
+#hero .bt {
+    text-align: left;
+    margin-top: 0px;
+}
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
   background-position: center top;
@@ -531,7 +603,7 @@ h6,
 
 @media (min-width: 1024px) {
   #hero p {
-    width: 60%;
+    width: 38%;
   }
 
   #hero .carousel-control-prev,
