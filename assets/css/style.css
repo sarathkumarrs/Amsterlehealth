@@ -414,13 +414,13 @@ h6,
 }
 
 #services  .owl-carousel .owl-nav button.owl-next, #services .owl-carousel .owl-nav button.owl-prev {
-  margin-right: 12px;
+  margin-right: 25px;
     border-radius: 50%;
     border: 1px solid #f85b12;
     background: #f85b12;
-    width: 50px;
-    height: 50px;
-    font-size: 29px;
+    width: 80px;
+    height: 80px;
+    font-size: 46px;
 }
 #services .owl-carousel .owl-nav button.owl-next {
   margin-right: 0;
@@ -435,15 +435,15 @@ h6,
   text-align: left;
       width: 70%;
   margin-bottom: 0;
-  font-size: 12px;
-    line-height: 22px;
+  font-size: 16px;
+    line-height: 30px;
   margin-left: 0;
 }
 #services p.sec-p {
   text-align: center;
   width: 75%;
-       margin: 30px auto 60px;
-        line-height: 25px;
+       margin: 30px auto 80px;
+        line-height: 36px;
 }
 #services .sub-heading-text {
   margin-top: 0;
@@ -502,24 +502,24 @@ h6,
 
 #hero h2 {
   color: #1d2c5f;
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: bolder;
-    font-family: 'Poppins';
+  margin-bottom: 30px;
+  font-size: 52px;
+     font-weight: bolder;
+     font-family: 'Poppins';
 }
 
 #hero p {
   width: 38%;
- animation-delay: 0.4s;
-    color: #000;
-    font-family: sans-serif;
-    margin-bottom: 30px;
-    font-size: 12px;
+  animation-delay: 0.4s;
+  color: #000;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+      font-size: 18px;
 }
 
 #hero .bt {
     text-align: left;
-    margin-top: 0px;
+    margin-top: 50px;
 }
 #hero .carousel-inner .carousel-item {
   transition-property: opacity;
