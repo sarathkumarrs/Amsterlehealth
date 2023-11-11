@@ -14,13 +14,53 @@ function resize(){
         });
         $selector.height(h);
     }
-    equalCard1($('.API li p.first'));
+    equalCard1($('#testimonials li p.first'));
+
+    function equalwidth($selector){
+        var h = 0;
+        $selector.width('auto');
+        $selector.each(function(){
+            var width = $(this).width();
+            if(width > h){
+                h = width;
+            }
+        });
+        $selector.width(h);
+    }
+    equalwidth($('.top_tab a'));
 
 }
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
 
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
 $(document).ready(function(){
 	resize();
- $('.API .owl-carousel').owlCarousel({
+
+$('#spotlight .owl-carousel').owlCarousel({
+        loop: true,
+        dots: false,    
+        nav:true,             
+        autoplay: true,
+        autoplayspeed: 1000,
+        margin:13,   
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            768: {
+                items: 1
+            },
+            1500: {
+                items: 1
+            },
+        }
+    });
+ $('#testimonials .owl-carousel').owlCarousel({
         loop: true,
         dots: true,    
         nav:false,             
@@ -32,16 +72,16 @@ $(document).ready(function(){
             0: {
                 items: 1
             },
-            600: {
+            768: {
                 items: 2
             },
-            700: {
+            1500: {
                 items: 3
             },
         }
     });
 
- $('.V_CARE .owl-carousel').owlCarousel(
+ $('#clients .owl-carousel').owlCarousel(
 {
         loop: true,
         dots: true,    
@@ -56,7 +96,10 @@ $(document).ready(function(){
             600: {
                 items: 3
             },
-            700: {
+            900: {
+                items: 4
+            },
+             1500: {
                 items: 5
             },
         }
@@ -75,13 +118,7 @@ $(document).ready(function(){
 
             0: {
                 items: 1
-            },
-            600: {
-                items: 1
-            },
-            700: {
-                items: 1
-            },
+            }
         }
 
     });
