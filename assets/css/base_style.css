@@ -1024,7 +1024,7 @@ footer .bottom  img.social.last {margin-right: 0px;}
         width: 80%;
     }
     h2.heading {
-    font-size: 27px;
+    font-size: 26px;
     }
 
     #asthetics .d-flex .card {
@@ -1184,11 +1184,20 @@ footer .bottom li {
 footer .bottom li.right, footer .bottom li {
     margin-top: 10px;
 }
+a.button {
+        width: 200px;
+        padding: 11px 0px;
+    }
 }
-@media all and (max-width: 480px){ `
-
+@media all and (max-width: 480px){ 
+    #about h3.heading-text {
+        font-size: 16px;
+    }
+    #about h2.heading {
+        line-height: 38px;
+    }
     h2.heading {
-        font-size: 24px;
+        font-size: 22px;
     }
     #services p.sec-p {
         width: 100%;
@@ -1225,7 +1234,7 @@ footer .bottom li.right, footer .bottom li {
     padding: 70px 0 30px;
 }
 .article_card__subtitle {
-    font-size: 18px;
+    font-size: 16px;
 }
 #services .owl-nav {
         left: 139px;
