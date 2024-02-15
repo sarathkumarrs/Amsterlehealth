@@ -588,12 +588,12 @@ h2.heading {
 
 #clients {
     text-align: center;
-    padding: 100px 0 80px;
+    /* padding: 100px 0 80px; */
 }
 
 #clients  img {
     display: block;
-    width: 100%;
+    
 }
 #clients .client {
     margin-top: 60px;

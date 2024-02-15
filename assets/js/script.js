@@ -133,3 +133,5 @@ $(window).on('load', function () {
 $(window).resize(function(){
 	resize();
 });
+
+

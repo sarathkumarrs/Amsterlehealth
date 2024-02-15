@@ -434,43 +434,69 @@
     </section>
 
 
-    <section id="clients"> 
-                <section class="wrapper">
-            <div>
-                <h2 class="heading">Our Trusted Clients</h2>
-                   <section  class="carousel-wrap client">
-		                <ul class="owl-carousel">
-		                    <li>
-		                        <img src="image/1.png" alt="">
-		                    </li>
-		                      <li>
-		                        <img src="image/2.png" alt="">
-		                    </li>
-		                      
-		                       <li>
-		                        <img src="image/3.png" alt="">
-		                    </li>
-		                     <li>
-		                        <img src="image/4.png" alt="">
-		                    </li>
-		                      <li>
-		                        <img src="image/5.png" alt="">
-		                    </li>
-		                      <li>
-		                        <img src="image/6.png" alt="">
-		                    </li>
-		                      <li>
-		                        <img src="image/7.png" alt="">
-		                    </li>
-		                      <li>
-		                       <img src="image/8.png" alt="">
-		                    </li>
-		                     <li >
-		                        <img src="image/9.png" alt="">
-		                    </li>
-		                </ul>
-            
-				</section>
+    <section id="clients" style="margin:4rem 0;padding: 0;"> 
+      <section class="">
+         <div>
+            <h2 class="heading">Our Trusted Clients</h2>
+               <section  class="">
+		            <div class="logo-container" id="logoContainer" style="white-space: nowrap;overflow: hidden;width: 100%;display: flex;align-items: center;cursor: grab;margin-top: 2rem;" onmousedown="startDrag(event)" onmouseup="stopDrag()">
+                     <img src="image/1.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/2.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/3.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/4.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/5.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/6.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/7.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/8.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/9.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">  
+                     <img src="image/1.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/2.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/3.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/4.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/5.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/6.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/7.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/8.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;">
+                     <img src="image/9.png" alt="" style=" margin-right: 20px;width:30%;height: 30%;"> 
+                  </div>
+               </section>
+            <script>
+               const logoContainer = document.getElementById('logoContainer');
+               const speed = 2; // Adjust as needed
+               let isDragging = false;
+               let dragStartX = 0;
+           
+               function startDrag(event) {
+                   isDragging = true;
+                   dragStartX = event.clientX;
+               }
+           
+               function stopDrag() {
+                   isDragging = false;
+               }
+           
+               function scroll() {
+                   if (!isDragging) {
+                       logoContainer.scrollLeft += speed;
+                       if (logoContainer.scrollLeft >= logoContainer.scrollWidth / 2) {
+                           logoContainer.scrollLeft = 0;
+                       }
+                   }
+               }
+           
+               setInterval(scroll, 30);
+           
+               logoContainer.addEventListener('mousemove', (event) => {
+                   if (isDragging) {
+                       const deltaX = event.clientX - dragStartX;
+                       logoContainer.scrollLeft -= deltaX;
+                       dragStartX = event.clientX;
+                   }
+               });
+           
+               logoContainer.addEventListener('mouseleave', stopDrag);
+               logoContainer.addEventListener('mouseup', stopDrag);
+           </script>
 
                 
             </div>
